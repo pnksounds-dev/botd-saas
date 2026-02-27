@@ -70,7 +70,7 @@
         let apiKey = localStorage.getItem('botd_key');
         
         function register() {
-            fetch('http://localhost:5000/api/register', {
+            fetch('https://web-production-c3d23.up.railway.app/api/register', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'}
             })
@@ -92,7 +92,7 @@
                 return;
             }
             
-            fetch('http://localhost:5000/api/detect', {
+            fetch('https://web-production-c3d23.up.railway.app/api/detect', {
                 method: 'POST',
                 headers: {'X-API-Key': apiKey}
             })

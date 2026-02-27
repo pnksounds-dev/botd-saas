@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import json
 import time
@@ -23,6 +23,11 @@ init_db()
 
 @app.route('/')
 def home():
+    # Serve the dashboard as the main page
+    return send_from_directory('.', 'dashboard.html')
+
+@app.route('/api')
+def api_info():
     return jsonify({"message": "BotD SaaS API is running", "status": "active"})
 
 @app.route('/api/register', methods=['POST'])

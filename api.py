@@ -27,10 +27,10 @@ TIERS = {
     'pro': {'requests': 100000, 'price': 99}
 }
 
-# Stripe Price IDs (you'll create these in Stripe Dashboard)
+# Stripe Price IDs
 PRICE_IDS = {
-    'starter': 'price_1Qh4X2R...',  # Replace with actual price ID
-    'pro': 'price_1Qh4Y3R...'      # Replace with actual price ID
+    'starter': 'price_1T5XpELodupdv9dkQoBVdrv3',
+    'pro': 'price_1T5XphLodupdv9dkzOEW6iSk'
 }
 
 def init_db():
